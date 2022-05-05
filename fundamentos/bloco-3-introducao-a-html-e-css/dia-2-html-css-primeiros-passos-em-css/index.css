@@ -1,0 +1,32 @@
+body {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 40px;
+    text-align: center;
+  }
+  h1 {
+      width: 65px;
+      color: orange;
+      font-family: sans-serif;
+  }
+  ul {
+      background-color: black;
+      color:white;
+  }
+
+  .lista-e-texto {
+      background-color: blue;
+  }
+  p {
+    font-weight: 600;
+    font-size: 3em;
+  }
+  #Amarelo {
+    background-color: goldenrod;
+  }
+  #Vermelho {
+    background-color: red;
+  }
+  #Marrom {
+    background-color: brown;
+  }
