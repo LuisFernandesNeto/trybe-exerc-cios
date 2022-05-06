@@ -19,12 +19,21 @@
             background-color: blue;
             color: white;
         }
+        .Jornada {
+            color: blue;
+        }
+        .Paragrafos {
+            background-color: gold;
+            width: 200px;
+            height: 300px;
+            overflow: auto;
+       }
     </style>
 </head>
 <body>
     <h1>Aprendizados</h1>
     <h2>Meu aprendizado começa aqui e agora</h2>
-    <p>Hoje eu começo minha jornada na Trybe! <br>
+    <p>Hoje eu começo minha <span class="Jornada">jornada na Trybe!</span> <br>
         <strong>Com muito esforço e apoio</strong> vou me tornar
         uma pessoa desenvolvedora muito capaz!
     </p>
@@ -57,7 +66,7 @@
         Conteúdo sobre posicionmanto em CS <br>
         Conteúdo sobre posicionmanto em CS <br>
     </p>
-    <p class="estilo-conteudo">Conteúdo sobre HTML semântico <br>
+    <p class="estilo-conteudo">Conteúdo sobre HTML <span class="Jornada">semântico</span> <br>
         Conteúdo sobre HTML semântico <br>
         Conteúdo sobre HTML semântico <br>
         Conteúdo sobre HTML semântico <br>
@@ -67,6 +76,7 @@
         Conteúdo sobre HTML semântico <br>
         Conteúdo sobre HTML semântico <br>    
     </p>
+<div class="Paragrafos">
     <p id="javascript">Conteúdo sobre JavaScript<br>
         Conteúdo sobre JavaScript<br>
         Conteúdo sobre JavaScript<br>
@@ -77,5 +87,6 @@
         Conteúdo sobre JavaScript<br>
         Conteúdo sobre JavaScript<br>
     </p>
+</div>
 </body>
 </html>
