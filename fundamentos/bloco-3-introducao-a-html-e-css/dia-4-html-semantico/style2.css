@@ -12,16 +12,30 @@ nav {
     top: 160px;
     float: left;
     background-color: #cfd5e1;
+    border: 6px solid black;
 }
 main {
     text-align: center;
 }
 aside {
-    float: right;
+    float: right;  
 }
 table {
     position:absolute;
     line-height: 50px;
     right: 120px;
     background-color: #cfd5e1;
+    border: 6px solid black;
+}
+img {
+    float: left;
+    width: 200px;
+    left: 300px;
+    margin-left: 20em;
+}
+p {
+    
+}
+section {
+    
 }
