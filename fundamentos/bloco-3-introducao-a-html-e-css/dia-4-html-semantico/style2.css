@@ -1,0 +1,18 @@
+body {
+    background-color: #dad5b7;
+    font-family: 'Courier New', Courier, monospace;
+}
+header {
+    text-align: center;
+}
+nav {
+    line-height: 40px;
+    font-size: 16px;
+    float: left;
+}
+main {
+    text-align: center;
+}
+aside {
+    float: right;
+}
