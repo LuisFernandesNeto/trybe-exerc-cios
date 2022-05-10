@@ -34,7 +34,7 @@ img {
     left: 665px;
     border: 3px solid black;
 }
-p {
+#seção1 {
     position:absolute;
     top: 450px;
     width: 800px;
@@ -42,7 +42,24 @@ p {
     line-height: 30px;
     border: 2px solid black;
 }
-h1, h2, h3 {
+.header {
     position: relative;
     right: 100px;
+}
+#seção2 {
+    position:absolute;
+    top: 1300px;
+    width: 800px;
+    left: 450px;
+    line-height: 30px;
+    border: 2px solid black;
+}
+#header2 {
+    position:absolute;
+    top: 1250px;
+    width: 800px;
+    left: 450px;
+    line-height: 30px;
+    border: 2px solid black;
+
 }
