@@ -1,18 +1,27 @@
 body {
-    background-color: #dad5b7;
+    background-color: #ededf2;
     font-family: 'Courier New', Courier, monospace;
 }
 header {
     text-align: center;
 }
 nav {
+    position:absolute;
     line-height: 40px;
     font-size: 16px;
+    top: 160px;
     float: left;
+    background-color: #cfd5e1;
 }
 main {
     text-align: center;
 }
 aside {
     float: right;
+}
+table {
+    position:absolute;
+    line-height: 50px;
+    right: 120px;
+    background-color: #cfd5e1;
 }
