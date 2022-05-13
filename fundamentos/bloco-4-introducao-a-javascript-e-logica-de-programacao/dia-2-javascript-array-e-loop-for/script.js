@@ -25,5 +25,13 @@ console.log(menu3);
 let groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
 
 for(let indice = 0; indice < groceryList.length; indice += 1) {
-    console.log(groceryList[indice])
+    console.log(groceryList[indice]);
+}
+
+// Exercício 5
+
+let names = ['João', 'Maria', 'Antônio', 'Margarida'];
+
+for(let elementosLista of names) {
+    console.log(elementosLista);
 }
