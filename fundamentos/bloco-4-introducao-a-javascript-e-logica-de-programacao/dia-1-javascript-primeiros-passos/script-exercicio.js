@@ -197,10 +197,10 @@ if (salarioBase <= 1903.98) {
     ir = 0;
 }
 else if (salarioBase >= 1903.99 && salarioBase < 2826.65) {
-    ir = ((salarioBase / 100) * 7.5) - 142,80;
+    ir = ((salarioBase / 100) * 7.5) - 142.80;
 }
 else if (salarioBase >= 2826.66 && salarioBase < 3751.05) {
-    ir = ((salarioBase / 100) * 15) - 354,80;
+    ir = ((salarioBase / 100) * 15) - 354.80;
 }
 else if (salarioBase >= 3751.06 && salarioBase < 4664.68) {
     ir = ((salarioBase / 100) * 22.5) - 636.13;
