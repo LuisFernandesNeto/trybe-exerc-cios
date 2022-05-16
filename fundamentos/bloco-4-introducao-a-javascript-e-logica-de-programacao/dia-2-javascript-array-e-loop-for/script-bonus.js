@@ -35,7 +35,7 @@ let numbers2 = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let resultado = [];
 
 for (let index = 0; index < numbers2.length; index += 1) {
-      if (index != numbers2.length ) {
+      if (index === numbers2.length -1) {
         resultado.push(numbers2[index] * 2);
     } 
     else {
