@@ -41,14 +41,18 @@ console.log(maior);
 // Exercício 4
 
 let numero = 50;
-let primo;
 
 for (n = 2; n <= numero; n += 1) {
+    let primo = true;
     for (let divisor = 2; divisor < n; divisor += 1) {
-        if (n % divisor === 0)
-        break; 
+        if (n % divisor === 0) {
+            primo = false;
+            break;
+        }
+        let maiorNumero = 0;
+        if (primo) {
+            maiorNumero = n;
+        }
     }
-    primo = n;
-}   
-
-console.log(primo);
+    console.log(maiorNumero);
+}
