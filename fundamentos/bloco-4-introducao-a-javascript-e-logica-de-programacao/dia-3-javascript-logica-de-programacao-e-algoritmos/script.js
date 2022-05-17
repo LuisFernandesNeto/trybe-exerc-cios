@@ -41,6 +41,7 @@ console.log(maior);
 // Exercício 4
 
 let numero = 50;
+let maiorNumero = 0;
 
 for (n = 2; n <= numero; n += 1) {
     let primo = true;
@@ -49,10 +50,9 @@ for (n = 2; n <= numero; n += 1) {
             primo = false;
             break;
         }
-        let maiorNumero = 0;
         if (primo) {
             maiorNumero = n;
         }
     }
-    console.log(maiorNumero);
 }
+console.log(maiorNumero);
