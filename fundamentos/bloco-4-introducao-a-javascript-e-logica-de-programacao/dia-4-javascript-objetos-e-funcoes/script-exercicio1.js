@@ -12,3 +12,6 @@ console.log('A jogadora '+ player.name + ' ' + player.lastName + ' tem ' + playe
 console.log('A jogadora '+ player.name + ' ' + player.lastName + ' foi eleita a melhor do mundo ' + player.bestInTheWorld.length + ' vezes.');
 
 console.log('A jogadora possui ' + player.medals.golden + ' medalhas de ouro e ' + player.medals.silver + ' medalhas de prata.');
+
+let string;
+console.log(string)

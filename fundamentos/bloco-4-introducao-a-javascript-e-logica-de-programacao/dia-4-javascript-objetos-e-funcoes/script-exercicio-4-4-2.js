@@ -14,3 +14,5 @@ function reverseString(string) {
      }
      }
 console.log(reverseString(string));
+
+// 2
