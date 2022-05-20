@@ -8,8 +8,37 @@ console.log(document.getElementById("pai").firstElementChild);
 
 console.log(document.getElementById("elementoOndeVoceEsta").previousElementSibling);
 
-console.log(document.getElementById("elementoOndeVoceEsta").firstChild);
+console.log(document.getElementById("elementoOndeVoceEsta").firstElementChild);
 
 console.log(document.getElementById("elementoOndeVoceEsta").nextElementSibling);
 
-console.log(document.getElementById("pai").nextElementSibling);
+console.log(document.getElementById("pai").firstElementChild.nextElementSibling);
+
+// 2
+
+let filho = document.getElementById("pai");
+
+let quintoFilho = document.createElement("section");
+quintoFilho.innerText = "quintoFilho";
+
+console.log(filho.appendChild(quintoFilho));
+
+let filhoDoFilho = document.getElementById("elementoOndeVoceEsta");
+
+let terceiroFilhoDoFilho = document.createElement("section");
+terceiroFilhoDoFilho.innerText = "terceiroFilhoDoFilho";
+
+console.log(filhoDoFilho.appendChild(terceiroFilhoDoFilho));
+
+console.log(document.getElementById("pai"));
+
+let Neto = document.getElementById("primeiroFilhoDoFilho");
+
+let Neto1 = document.createElement("section");
+Neto1.innerText = "Neto";
+
+Neto.appendChild(Neto1);
+
+console.log(document.getElementById("pai"));
+
+
