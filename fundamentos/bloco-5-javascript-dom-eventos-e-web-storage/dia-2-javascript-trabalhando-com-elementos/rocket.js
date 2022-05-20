@@ -19,14 +19,14 @@ console.log(document.getElementById("pai").firstElementChild.nextElementSibling)
 let filho = document.getElementById("pai");
 
 let quintoFilho = document.createElement("section");
-quintoFilho.innerText = "quintoFilho";
+quintoFilho.id = "quintoFilho";
 
 console.log(filho.appendChild(quintoFilho));
 
 let filhoDoFilho = document.getElementById("elementoOndeVoceEsta");
 
 let terceiroFilhoDoFilho = document.createElement("section");
-terceiroFilhoDoFilho.innerText = "terceiroFilhoDoFilho";
+terceiroFilhoDoFilho.id = "terceiroFilhoDoFilho";
 
 console.log(filhoDoFilho.appendChild(terceiroFilhoDoFilho));
 
@@ -35,10 +35,10 @@ console.log(document.getElementById("pai"));
 let Neto = document.getElementById("primeiroFilhoDoFilho");
 
 let Neto1 = document.createElement("section");
-Neto1.innerText = "Neto";
+Neto1.id = "neto";
 
 Neto.appendChild(Neto1);
 
-console.log(document.getElementById("pai"));
+console.log(document.getElementById("neto").parentElement.parentElement.parentElement.lastElementChild.previousElementSibling.previousElementSibling);
 
 
