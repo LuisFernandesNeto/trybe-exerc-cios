@@ -41,4 +41,9 @@ Neto.appendChild(Neto1);
 
 console.log(document.getElementById("neto").parentElement.parentElement.parentElement.lastElementChild.previousElementSibling.previousElementSibling);
 
+// 3
 
+let removeFilho = document.getElementById("primeiroFilho");
+console.log(removeFilho);
+
+removeFilho.removeChild();
