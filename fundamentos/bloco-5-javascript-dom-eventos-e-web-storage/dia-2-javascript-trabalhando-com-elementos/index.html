@@ -86,10 +86,55 @@
 
       //5
       let section2 = document.createElement("section");
-      section2.className = "right-content";
+      section2.className = "left-content";
 
       main2.appendChild(section2);
       
+      //6
+      let section3 = document.createElement("section");
+      section3.className = "right-content";
+
+      main2.appendChild(section3);
+
+      //7
+      let sectionSearch2 = document.querySelector(".left-content");
+      let img = document.createElement("img");
+      img.src = "https://picsum.photos/200";
+      img.className = "small-image";
+
+      sectionSearch2.appendChild(img);
+
+      //8
+      let sectionSearch3 = document.querySelector(".right-content");
+      let ul = document.createElement("ul");
+
+      sectionSearch3.appendChild(ul);
+
+      let sectionSearch4 = document.querySelector("ul");
+
+
+      let text = [
+        "um",
+        "dois",
+        "três",
+        "quatro",
+        "cinco",
+        "seis",
+        "sete",
+        "oito",
+        "nove",
+        "dez"
+      ];
+
+      for (let index = 0; index < text.length; index += 1) {
+        let numeros = text[index];
+        
+        let li = document.createElement("li");
+        li.innerText = numeros;
+
+        sectionSearch4.appendChild(li);
+      }
+
       console.log(body);
     </script>
   </body>
