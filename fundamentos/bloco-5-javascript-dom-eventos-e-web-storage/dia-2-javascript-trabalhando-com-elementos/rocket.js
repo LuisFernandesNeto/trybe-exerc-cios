@@ -43,7 +43,25 @@ console.log(document.getElementById("neto").parentElement.parentElement.parentEl
 
 // 3
 
-let removeFilho = document.getElementById("primeiroFilho");
-console.log(removeFilho);
+let removeFilho = document.getElementById("pai");   
+let filhoRemovido = document.getElementById("primeiroFilho");
 
-removeFilho.removeChild();
+removeFilho.removeChild(filhoRemovido);
+
+let filhoRemovido2 = document.getElementById("terceiroFilho");
+removeFilho.removeChild(filhoRemovido2);
+
+let filhoRemovido3 = document.getElementById("quartoEUltimoFilho");
+removeFilho.removeChild(filhoRemovido3);
+
+let filhoRemovido4 = document.getElementById("quintoFilho");
+removeFilho.removeChild(filhoRemovido4);
+
+let removeFilho2 = document.getElementById("elementoOndeVoceEsta");  
+let filhoRemovido5 = document.getElementById("segundoEUltimoFilhoDoFilho");
+removeFilho2.removeChild(filhoRemovido5);
+
+let filhoRemovido6 = document.getElementById("terceiroFilhoDoFilho");
+removeFilho2.removeChild(filhoRemovido6);
+
+console.log(document.getElementById("pai"));
