@@ -58,7 +58,6 @@
   <body>
     <script>
       // 1
-
       let h1 = document.createElement("h1");
       let body = document.querySelector("body");
         h1.innerText = "Exercício 5.2 - JavaScript DOM";
@@ -66,12 +65,31 @@
         body.appendChild(h1);
 
       // 2
-
       let main = document.createElement("main");
       main.className = "main-content";
 
       body.appendChild(main);
 
+      // 3
+      let main2 = document.querySelector("main");
+      let section = document.createElement("section");
+      section.className = "center-content";
+
+      main2.appendChild(section);
+
+      //4
+      let sectionSearch = document.querySelector("section");
+      let p = document.createElement("p");
+      p.innerText = "Chegamos até aqui!!";
+
+      sectionSearch.appendChild(p);
+
+      //5
+      let section2 = document.createElement("section");
+      section2.className = "right-content";
+
+      main2.appendChild(section2);
+      
       console.log(body);
     </script>
   </body>
