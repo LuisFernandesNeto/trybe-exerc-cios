@@ -131,6 +131,7 @@
         
         let li = document.createElement("li");
         li.innerText = numeros;
+        li.className =   "numeros";
 
         sectionSearch4.appendChild(li);
       }
@@ -143,6 +144,36 @@
       main.appendChild(h3A);
       main.appendChild(h3B);
       main.appendChild(h3C);
+
+      //1
+      h1.className = "title";
+
+      //2
+      h3A.className = "description";
+      h3B.className = "description";
+      h3C.className = "description";
+
+      //3
+      main2.removeChild(section2);
+
+      //4
+      section3.style.marginRight = "auto";
+
+      //5
+      main2.style.backgroundColor = "green";
+
+      //6
+      let li2 = document.querySelectorAll(".numeros");
+
+      for (let index = 0; index < li2.length; index += 1) {
+        let element = li2[index];
+        
+        if(element.innerText.includes("nove")) {
+          ul.removeChild(element);
+        } else if (element.innerText.includes("dez")) {
+          ul.removeChild(element);
+        }
+      }
 
       console.log(body);
     </script>
