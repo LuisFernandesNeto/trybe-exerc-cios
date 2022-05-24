@@ -20,11 +20,14 @@ function createDaysOfTheWeek() {
   function calendario() {
       for (let index = 0; index < dezDaysList.length; index += 1) {
           let contagem = dezDaysList[index];
-          days.createElement("li");
+          let days2 = document.createElement("li");
+          days2.innerText = contagem;
+          days.appendChild(days2);
       }
-  }
+  }    
+  calendario();
+  console.log(document.querySelector("body"));
 
-  
 
   
 
