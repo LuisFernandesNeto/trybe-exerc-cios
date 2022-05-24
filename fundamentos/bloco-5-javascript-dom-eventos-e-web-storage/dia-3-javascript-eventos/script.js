@@ -23,6 +23,13 @@ function createDaysOfTheWeek() {
           let days2 = document.createElement("li");
           days2.innerText = contagem;
           days.appendChild(days2);
+          if (contagem === 24 || contagem === 31) {
+            days2.classList= "holiday";
+          } else if (contagem === 4 || contagem === 11 || contagem === 18) {
+            days2.classList = "friday";
+          } else if (contagem === 25) {
+            days2.classList = "friday", "holiday";
+          }
       }
   }    
   calendario();
