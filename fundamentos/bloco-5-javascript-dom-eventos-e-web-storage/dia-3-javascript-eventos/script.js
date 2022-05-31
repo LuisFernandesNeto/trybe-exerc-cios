@@ -28,7 +28,7 @@ function createDaysOfTheWeek() {
           } else if (contagem === 4 || contagem === 11 || contagem === 18) {
             days2.classList = "friday";
           } else if (contagem === 25) {
-            days2.classList = "friday", "holiday";
+            days2.classList = "friday holiday";
           }
       }
   }    
