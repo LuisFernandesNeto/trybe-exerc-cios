@@ -1,0 +1,11 @@
+.formulario {
+    background-color: darkgrey;
+    padding: 20px;
+    border: solid black 3px;
+    text-align: center;
+}   
+
+.top {
+    display: inline-block;
+    width: 300px;
+}
