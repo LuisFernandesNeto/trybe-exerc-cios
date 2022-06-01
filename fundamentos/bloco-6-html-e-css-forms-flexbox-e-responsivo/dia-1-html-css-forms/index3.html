@@ -10,11 +10,11 @@
 <body>
     <form action="" class="formulario">
         <label for="nome">
-            <input type="text" required placeholder="Digite seu nome completo" id="nome" class="top">Nome Completo
+            <input type="text" required placeholder="Digite seu nome completo" id="nome" class="top" minlength="10" maxlength="40">Nome Completo
         </label>
         <label for="email">
-            <input type="email" required placeholder="Digite seu email" id="email" class="top">Email
-        </label>
+            <input type="email" required placeholder="Digite seu email" id="email" class="top" minlength="10" maxlength="50">Email
+        </label>    
         <div>
             <label for="Cidade">
                 <input type="radio" id="Cidade" value="Cidade" name="Destino">Cidade
@@ -31,7 +31,7 @@
         </div>
         <br>
         <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
-        <textarea name="concurso" id="textarea-1" cols="70" rows="10"></textarea>
+        <textarea name="concurso" id="textarea-1" cols="70" rows="10" maxlength="500"></textarea>
         <br>
         <p>Qual a melhor data para realizar sua viagem?</p>
         <input type="date">
@@ -41,6 +41,8 @@
         <br>
         <br>    
         <input type="checkbox" required> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+        <br>
+        <input type="file" required>
         <br>
         <button type="submit" id="button">Enviar</button>
         <button type="reset">Limpar</button>
