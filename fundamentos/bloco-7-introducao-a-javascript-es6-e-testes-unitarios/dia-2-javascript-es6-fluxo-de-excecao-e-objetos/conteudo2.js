@@ -1,4 +1,4 @@
-const student1 = {
+/* const student1 = {
     Html: 'Muito Bom',
     Css: 'Bom',
     JavaScript: 'Ótimo',
@@ -24,4 +24,14 @@ const student1 = {
   listSkills(student1);
   
   console.log('Estudante 2');
-  listSkills(student2);
+  listSkills(student2); */
+
+  const top3Albums = {
+    1: 'Nightfall in Middle-Earth',
+    2: 'Imaginations from the Other Side',
+    3: 'Somewhere Far Beyond',
+    };
+    
+
+Object.entries(top3Albums);
+console.log(top3Albums)
