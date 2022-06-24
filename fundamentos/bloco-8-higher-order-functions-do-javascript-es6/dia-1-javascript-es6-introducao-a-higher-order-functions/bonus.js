@@ -30,10 +30,22 @@ const mage = {
    */
 // 2
 
-  const warriorDmg = (damage) => {
+  /* const warriorDmg = (damage) => {
     const minDmg = 15;
     const dmg = Math.floor((Math.random() * ((damage.strength * damage.weaponDmg) - minDmg + 1) + minDmg));
     return dmg;
   };
 
-  console.log(warriorDmg(warrior));
+  console.log(warriorDmg(warrior)); */
+
+  // 3
+
+  const mageDmg = (damage) => {
+    const manaSpent = 15;
+    const minDmg = damage.intelligence
+    const dmg = Math.floor((Math.random() * ((damage.intelligence * 2)  - minDmg + 1) + minDmg));
+    return dmg;
+    
+  };
+
+  console.log(mageDmg(mage));
