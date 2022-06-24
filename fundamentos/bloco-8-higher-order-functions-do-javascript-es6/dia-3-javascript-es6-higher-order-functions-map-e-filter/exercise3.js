@@ -97,3 +97,4 @@ const expectedResult = [
  const fantasyOrScienceFiction = books.filter((genero) => genero.genre === 'Ficção Científica' || genero.genre === 'Fantasia');
 
  console.log(fantasyOrScienceFiction);
+ // 3

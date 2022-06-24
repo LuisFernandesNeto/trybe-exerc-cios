@@ -96,3 +96,5 @@ const books = [
     )).sort((age1, age2) => age1.age - age2.age);
 
   console.log(nameAndAge);
+
+  // 2
