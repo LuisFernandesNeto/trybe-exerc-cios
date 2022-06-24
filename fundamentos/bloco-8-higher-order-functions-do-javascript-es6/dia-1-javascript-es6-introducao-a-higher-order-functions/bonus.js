@@ -18,11 +18,22 @@ const mage = {
     damage: undefined,
   };
   
-  const battleMembers = (charDmg) => {
+  // 1
+
+/*   const dragonDmg = (dmg) => {
     const minDmg = 15;
-    const dmg = Math.floor((Math.random() * (charDmg.strength - minDmg + 1) + minDmg));
+    const dmg = Math.floor((Math.random() * (dmg.strength - minDmg + 1) + minDmg));
     return dmg;
   };
 
   console.log(battleMembers(dragon));
-  
+   */
+// 2
+
+  const warriorDmg = (damage) => {
+    const minDmg = 15;
+    const dmg = Math.floor((Math.random() * ((damage.strength * damage.weaponDmg) - minDmg + 1) + minDmg));
+    return dmg;
+  };
+
+  console.log(warriorDmg(warrior));
