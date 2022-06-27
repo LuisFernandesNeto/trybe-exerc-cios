@@ -20,31 +20,31 @@ const mage = {
   
   // 1
 
-/*   const dragonDmg = (dmg) => {
-    const minDmg = 15;
-    const dmg = Math.floor((Math.random() * (dmg.strength - minDmg + 1) + minDmg));
-    return dmg;
+  const dragonDmg = (dragon) => {
+    const minDragonDmg = 15;
+    const dmgDragon = Math.floor((Math.random() * (dragon.strength - minDragonDmg + 1) + minDragonDmg));
+    return dmgDragon;
   };
 
-  console.log(battleMembers(dragon));
-   */
+  console.log(dragonDmg(dragon));
+  
 // 2
 
-  /* const warriorDmg = (damage) => {
-    const minDmg = 15;
-    const dmg = Math.floor((Math.random() * ((damage.strength * damage.weaponDmg) - minDmg + 1) + minDmg));
-    return dmg;
+  const warriorDmg = (warrior) => {
+    const minWarriorDmg = 15;
+    const dmgWarrior = Math.floor((Math.random() * ((warrior.strength * warrior.weaponDmg) - minWarriorDmg + 1) + minWarriorDmg));
+    return dmgWarrior;
   };
 
-  console.log(warriorDmg(warrior)); */
+  console.log(warriorDmg(warrior));
 
   // 3
 
-  const mageDmg = (damage) => {
-    const manaSpent = 15;
-    const minDmg = damage.intelligence
-    const dmg = Math.floor((Math.random() * ((damage.intelligence * 2)  - minDmg + 1) + minDmg));
-    return dmg;
+  const mageDmg = (mage) => {
+    const mageMana = mage.mana  ;
+    const minMageDmg = mage.intelligence
+    const dmgMage = Math.floor((Math.random() * ((mage.intelligence * 2)  - mage.intelligence + 1) + minMageDmg));
+    return dmgMage;
     
   };
 
