@@ -12,10 +12,13 @@ class Pokemon extends React.Component {
         return <Pokedex key={ pokemon.name } pokemon={ pokemon }/>
       })
       return (
-        <div className='pokedex'>
-          <h1><strong>POKÉDEX</strong></h1>
+        <div>
+        <h1><strong>POKÉDEX</strong></h1>
 
+        <div className='pokedex'>
           { pokemonsElements }
+        </div>
+
         </div>
       );
     }
