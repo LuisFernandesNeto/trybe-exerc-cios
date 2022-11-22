@@ -1,5 +1,27 @@
 const pokemons = [
     {
+        id: 1,
+        name: "Bulbasaur",
+        type: 'Grass, Poison',
+        averageWeight: {
+            value: 6.9,
+            measurementUnit: "kg"
+        },
+        image: "https://archives.bulbagarden.net/media/upload/7/76/Spr_5b_001.png",
+        moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pok%C3%A9mon)"
+    },
+    {
+        id: 2,
+        name: "Ivysaur",
+        type: 'Grass, Poison',
+        averageWeight: {
+            value: 13,
+            measurementUnit: "kg"
+        },
+        image: "https://archives.bulbagarden.net/media/upload/e/e1/Spr_5b_002.png",
+        moreInfo: "https://bulbapedia.bulbagarden.net/wiki/Ivysaur_(Pok%C3%A9mon)"
+    },
+    {
         id: 25,
         name: "Pikachu",
         type: 'Electric',
