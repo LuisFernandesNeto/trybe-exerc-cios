@@ -1,0 +1,192 @@
+// MongoDB Playground
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+const database = 'NEW_DATABASE_NAME';
+const collection = 'NEW_COLLECTION_NAME';
+
+// Create a new database.
+use(database);
+
+// Create a new collection.
+db.createCollection(collection);
+
+// The prototype form to create a collection:
+/* db.createCollection( <name>,
+  {
+    capped: <boolean>,
+    autoIndexId: <boolean>,
+    size: <number>,
+    max: <number>,
+    storageEngine: <document>,
+    validator: <document>,
+    validationLevel: <string>,
+    validationAction: <string>,
+    indexOptionDefaults: <document>,
+    viewOn: <string>,
+    pipeline: <pipeline>,
+    collation: <document>,
+    writeConcern: <document>,
+    timeseries: { // Added in MongoDB 5.0
+      timeField: <string>, // required for time series collections
+      metaField: <string>,
+      granularity: <string>
+    },
+    expireAfterSeconds: <number>,
+    clusteredIndex: <document>, // Added in MongoDB 5.3
+  }
+)*/
+
+// More information on the `createCollection` command can be found at:
+// https://www.mongodb.com/docs/manual/reference/method/db.createCollection/
+
+use("Cinema");
+db.movies.drop();
+db.movies.insertMany([
+  {
+    title: "Batman",
+    category: [
+      "action",
+      "adventure",
+    ],
+    imdbRating: 7.7,
+    budget: 35,
+  },
+  {
+    title: "Godzilla",
+    category: [
+      "action",
+      "adventure",
+      "sci-fi",
+    ],
+    imdbRating: 6.6,
+    budget: 1,
+  },
+  {
+    title: "Home Alone",
+    category: [
+      "family",
+      "comedy",
+    ],
+    imdbRating: 7.4,
+  },
+]);
+
+// 1
+use("Cinema");
+db.movies.updateOne({title: "Batman"}, { $push: {category: "superhero"}})
+
+use("Cinema");
+db.movies.find()
+
+// 2
+use("Cinema");
+db.movies.updateOne({title: "Batman"}, { $push: {category: { $each: ["villain", "comic-based"]}}})
+
+use("Cinema");
+db.movies.find()
+
+// 3
+use("Cinema");
+db.movies.updateOne({title: "Batman"}, { $pop: {category: -1}})
+
+use("Cinema");
+db.movies.find()
+
+// 4
+use("Cinema");
+db.movies.updateOne({title: "Batman"}, { $pop: {category: -1}})
+
+use("Cinema");
+db.movies.find()
+
+// 5
+use("Cinema");
+db.movies.updateOne({title: "Batman"}, { $pop: {category: 1}})
+
+use("Cinema");
+db.movies.find()
+
+// 6
+use("Cinema");
+db.movies.updateOne({title: "Batman"}, { $addToSet: {category: "action"}})
+
+use("Cinema");
+db.movies.find()
+
+// 7
+use("Cinema");
+db.movies.updateMany({title: { $in: ["Batman" ,"Home Alone"]}}, { $push: {category: "90's"}})
+
+use("Cinema");
+db.movies.find()
+
+// 8
+use("Cinema");
+db.movies.updateOne({title: "Home Alone"}, { $push: {cast: {$each: [{
+  "actor": "Macaulay Culkin",
+  "character": "Kevin"
+},
+{
+  "actor": "Joe Pesci",
+  "character": "Harry"
+},
+{
+  "actor": "Daniel Stern"
+},]}}})
+
+use("Cinema");
+db.movies.find()
+
+// 9
+use("Cinema");
+db.movies.updateOne({title: "Home Alone", "cast.actor": "Daniel Stern" }, { $set: {"cast.$.character": "Marv"}})
+
+use("Cinema");
+db.movies.find()
+
+// 10
+use("Cinema");
+db.movies.updateOne({title: "Batman"}, { $push: {cast: { $each: [{
+  "character": "Batman"
+},
+{
+  "character": "Alfred"
+},
+{
+  "character": "Coringa"
+}]}}})
+
+use("Cinema");
+db.movies.find()
+
+// 11
+use("Cinema");
+db.movies.updateOne({title: "Batman", "cast.character": "Batman" }, { $push: {"cast.$.actor": "Christian Bale"}})
+
+use("Cinema");
+db.movies.find()
+
+use("Cinema");
+db.movies.updateOne({title: "Batman", "cast.character": "Alfred" }, { $push: {"cast.$.actor": "Michael Caine"}})
+
+use("Cinema");
+db.movies.find()
+
+use("Cinema");
+db.movies.updateOne({title: "Batman", "cast.character": "Coringa" }, { $push: {"cast.$.actor": "Heath Ledger"}})
+
+use("Cinema");
+db.movies.find()
+
+use("Cinema");
+db.movies.updateOne({title: "Batman", "cast.character": "Batman" }, { $set: {"cast.actor": [""]}})
+
+use("Cinema");
+db.movies.find()
+
+// 12
+use("Cinema");
+db.movies.updateOne({title: "Batman", "cast.character": "Batman" }, { $push: {"cast.$.actor":{$each: ["Michael Keaton","Val Kilmer","George Clooney"], $sort: 1}}})
+
+use("Cinema");
+db.movies.find()
